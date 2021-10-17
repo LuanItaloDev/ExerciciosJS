@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+
+    <title>Exercicio 06</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Exercicio #06</h1>
+
+        <button class="mybtn" onclick="exercicio06()">Mostrar</button>
+        <br><br>
+        <p id="resultado" onclick="exercicio06()"></p>
+       
+
+        <button class="mybtn" onclick="goBack()">Voltar</button>
+
+    </div>
+</body>
+
+<script>
+    function exercicio06(){
+        const nomedoAluno = prompt("Digite o nome do aluno")
+        const primeiraNota = prompt("Digite a primeira nota")
+        const segundaNota = prompt("Digite a segunda nota")
+        const mediaNotas = (parseFloat(primeiraNota) + parseFloat(segundaNota)) / 2;
+       
+       
+        document.getElementById('resultado').innerHTML="Olá "+nomedoAluno+" sua primeira nota foi "+primeiraNota+" e a segunda foi "+segundaNota+" portanto sua média é "+mediaNotas+"!"
+
+}
+
+function goBack() {
+    window.history.back()
+}
+</script>
+
+
+</html>

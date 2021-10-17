@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
+
+    <title>Exercicio 03</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Exercicio #03</h1>
+
+        <button class="mybtn" onclick="exercicio03()">Mostrar</button>
+        <br><br>
+        <p id="mostrar"></p>
+
+        <button class="mybtn" onclick="goBack()">Voltar</button>
+
+    </div>
+</body>
+
+<script>
+    function exercicio03(){
+       var nomeInserido = prompt("Digite seu nome:")
+       document.getElementById('mostrar').innerHTML ='Olá '+nomeInserido+', é um prazer te conhecer! &#x1F596';}
+    
+
+
+
+       function goBack() {
+    window.history.back()
+}
+</script>
+
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+
+    <title>Exercicio 05</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Exercicio #05</h1>
+
+        <button class="mybtn" onclick="exercicio05()">Mostrar</button>
+        <br><br>
+        <p id="resultado" onclick="exercicio05()"></p>
+       
+        <button class="mybtn" onclick="goBack()">Voltar</button>
+
+    </div>
+</body>
+
+<script>
+    function exercicio05(){
+        var num01 = prompt('Digite um numero:')
+        var num02 = prompt('Digite outro numero:')
+        var resultado = parseFloat(num01) + parseFloat(num02);
+        
+        document.getElementById('resultado').innerText='A soma de '+num01+' com '+num02+' é ' +resultado;
+
+        }
+
+
+
+
+        function goBack() {
+    window.history.back()
+}
+</script>
+
+
+</html>

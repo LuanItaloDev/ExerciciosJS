@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+
+    <title>Exercicio 04</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Exercicio #04</h1>
+
+        <button class="mybtn" onclick="exercicio04()">Mostrar</button>
+        <br><br>
+        <p id="resultado" onclick="exercicio04()"></p>
+       
+        <button class="mybtn" onclick="goBack()">Voltar</button>
+
+    </div>
+</body>
+
+<script>
+    function exercicio04(){
+        var numeroDigitado = prompt('Digite um numero:')
+        var dobro = numeroDigitado * 2;
+        var metade = numeroDigitado / 2;
+        
+        document.getElementById('resultado').innerHTML="O dobro do numero "+numeroDigitado+", é " +dobro+ " e a metade é " +metade+"!"
+        
+        }
+
+
+
+
+        function goBack() {
+    window.history.back()
+}
+</script>
+
+
+</html>

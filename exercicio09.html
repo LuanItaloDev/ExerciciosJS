@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+
+    <title>Exercicio 09</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Exercicio #09</h1>
+
+        <button class="mybtn" onclick="calcularMedia()">Clacular média</button>
+        <br><br>
+        <button class="mybtn" onclick="goBack()">Voltar</button>
+
+     
+        
+    </div>
+</body>
+
+<script>
+
+    function calcularMedia(){
+        var nomeAluno = prompt("Qual é o seu nom?")
+        var nota01 = parseFloat(prompt("Digite a primeira nota:"))
+        var nota02 = parseFloat(prompt("Digite a segunda nota"))
+
+        var resultado = (nota01 = nota02)/2;
+        
+        console.log(resultado)
+    }
+
+
+//Função para voltara pagina//
+function goBack() {
+    window.history.back()
+}
+</script>
+
+
+</html>

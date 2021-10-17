@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+
+    <title>Exercicio 07</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Exercicio #07</h1>
+
+        <button class="mybtn" onclick="incrementClick()">Contar</button>
+        <button class="mybtn" onclick="decrementClick()">Zerar Contador</button>
+
+        <h3 id="conter-label">0</h3>
+
+        <br><br><br>
+
+        <button class="mybtn" onclick="goBack()">Voltar</button>
+
+    </div>
+</body>
+
+<script>
+
+ var conterVal = 0;
+
+ function incrementClick(){
+     updateDisplay(++conterVal);
+ }
+
+ function decrementClick(){
+     conterVal = 0;
+     updateDisplay(conterVal);
+ }
+
+ function updateDisplay(val){
+     document.getElementById("conter-label").innerHTML = val;
+ }
+
+
+
+
+//Função para voltara pagina//
+function goBack() {
+    window.history.back()
+}
+</script>
+
+
+</html>

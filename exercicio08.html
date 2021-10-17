@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+
+    <title>Exercicio 08</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Exercicio #08</h1>
+
+        <button class="mybtn" onclick="acao01()">Ação 1</button>
+        <button class="mybtn" onclick="acao02()">Ação 2</button>
+        <button class="mybtn" onclick="acao03()">Ação 3</button>
+        <button class="mybtn" onclick="acao04()">Ação 4</button>
+
+        <br><br><br>
+        <button class="mybtn" onclick="goBack()">Voltar</button>
+
+        <br><br><br>
+        <section id="saida">
+            <p>Aqui será registrado a saida conforme o click no botão escolhido</p>
+        </section>
+    </div>
+</body>
+
+<script>
+let resp = window.document.getElementById('saida')
+
+function acao01(){
+    resp.innerHTML += '<p>Clicou no primeiro botão</p>'
+}
+
+function acao02(){
+    resp.innerHTML += '<p>Clicou no segundo botão</p>'
+}
+function acao03(){
+    resp.innerHTML += '<p>Clicou no terceiro botão</p>'
+}
+function acao04(){
+    resp.innerHTML += '<p>Clicou no quarto botão</p>'
+}
+
+
+
+//Função para voltara pagina//
+function goBack() {
+    window.history.back()
+}
+</script>
+
+
+</html>
